@@ -1,0 +1,17 @@
+body {
+    background-color: aquamarine;
+}
+
+.intro li {
+    color: red;
+    text-decoration: none;
+}
+
+.intro {
+    display: flex;
+    margin-left: 450px;
+}
+
+.line {
+    margin-right: 20px;
+}
