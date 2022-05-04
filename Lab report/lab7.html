@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>lab7</title>
+</head>
+<body>
+  
+    <p id="string"></p>
+    <script>
+        // 4.Ask a string from user and find the no of occurence of specific letter
+            var str = window.prompt("Enter the string");
+            var str1 = window.prompt("Enter a specific letter whose ocuurence is to be found" );
+            var count = 0;
+            for (var i = 0; i < str.length; i++) {
+                if (str[i] == str1) {
+                    count++;
+                }
+            }
+            document.write("The number of occurances of " + str1 + " in the string " + str + " is " + count+"<br><br>");
+            //sk a string from user and change first and last letter to uppercase 
+            var str2 = prompt("Enter any string.");
+            var len = str2.length;
+            str2= str2.replace(str2.charAt(0),str2.charAt(0).toUpperCase());
+            str2 = str2.replace(str2.charAt(len-1),str2.charAt(len-1).toUpperCase());
+            document.getElementById("string").innerText = str2;
+           
+            //Ask a sting from user and count the no of vowel present in it
+                var string = prompt("Enter the string");
+                var vowels = string.match(/[aeiou]/gi);
+                var counts = vowels.length;
+                document.write("Number of vowels in the string: " + counts+"<br><br>");
+
+
+                //Ask number from user and check whether it is valid or not
+           
+                var choice;
+            var number = prompt("Enter your phone number");
+            if(number.length==10){
+                choice=confirm("Do you want to continue?");
+                if(choice==true){
+                    if(number.search( /^(97|98)/)==0){
+                        document.write("Valid number"); 
+                    }
+                    else{
+                        document.write("Invalid number");
+                    }
+                }
+                else{
+                    document.write("declined");
+                }
+            }
+            else{
+                document.write("Invalid number");
+            }
+
+        </script>
+
+</body>
+</html>
