@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>contact</title>
+    <style>
+        .contact {
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        
+        }
+        #message{
+            width: 100%;
+            height: 100%;
+            background-color: #f2f2f2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div class="contact-form">
+            <form action="contact.php" method="post">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" required>
+                <br/>
+                <br/>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <br/>
+                <br/>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Info</h2>
+            <p>Phone:9867726632</p>
+        
+            <br/>
+            <a href="mailto:khanalmadhav323@gmail.com?subject=hello">Send mail</a>
+            <footer id="footer">
+                <div class="container">
+                    <!-- social media icons -->
+                    <div class="socialicon">
+                        <a href="https://www.facebook.com/" target="_blank"><img src="https://louisville.edu/english/images/facebookicon.png/image" height="30"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" height="25"></a>
+                    
+                        <a href="https://www.linkedin.com/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" height="25"></a>
+                       
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>
